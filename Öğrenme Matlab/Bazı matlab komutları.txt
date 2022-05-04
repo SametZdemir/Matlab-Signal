@@ -1,0 +1,70 @@
+zeros(2,3)=====Sıfır matrisi
+ones(2,3)=====full Birim matris
+eye(3,3)===Birim matris
+rand(1,18)=== 0 ile 1 arasında değğişen 1*18 matrisdir
+10 + 40 *rand(5,3)=== 10 ile 50 arasında değişen 5*3 matrisdir
+linspace(10,30,3)==== 10 ve 30 arasından  3 tane sayı gerek
+a matrisinin devriği===  b=a.'
+
+
+Limit alma
+syms x;
+limit(fonksiyon,değişken,Nereye gittiği,'rigt or left')
+
+
+mutlak değer==== abs(x)
+symsum((2/3)^k,3,99) or symsum((2/3)^k,3,inf)=====aritmetik diziler
+
+diff(y)===türev
+pretty(a)====daha anlaşılır gösterir
+
+
+Belirsiz integral için;
+syms a ;
+int(a)
+
+Diferansiyel denklemler için ;
+dsolve('t^2*D2y+4*t*Dy+2y=0','1.koşul','2.koşul')
+
+Karmaşık sayılar;
+conj(z)=====Eşlenik
+real(a)===gerçek kısım
+imag(a)====sanal ksım
+
+
+Grafik işlemleri
+plot(x,y,'-r',x,k,'-b')======2 tane bir yerde
+semilogx(x,y)==== sadece x değerlerinin logaritmic artışı
+semilogy(x,y)==== sadece y değerlerinin logaritmic artışı
+loglog(x,y)==== x ve y nin logaritmic artışı
+
+syms x
+x=Laplace(f)=====laplacını al f fonksiyonun
+ilaplace(x)======Ters laplace
+
+
+cat(3,sayılar,[1,2,3,4;4 5 6 7;8 9 10 11])===========2 boyuttlu sayılar matrisine 3. boyut ekleme
+cell=kullanımı a={1,2,[1,2];"sam",[2 4],1}=====Her türlü şeyi tutar
+
+
+d1=isvarname(ifade1);=======ifade 1 in içindeki string bir değişken adı olabilir mi?
+d2=iskeyword(ifade)======== ifade değeri bir keyword mü ?
+sonuc=isa(ifade,'double')==== ifade double mı? yerine 'char'  'stirng' 'cell'  gibi kontrol
+
+sayı=3 ======double
+sayı=int8(sayı)======integer cevirdik
+kontrol için====isinteger(sayı)ve            string kontrolü ===isstring(x)     NaN kontrolü == isnan(a)
+exist deger=====deger diye bir şey tanımlı mı?
+containers.Map=====key-value
+map.Count===sayac
+strcmp(ulke,'usa')=====string ifade karşşılaşması
+num2str()=======Bir şeyi str yapar
+str2num()===== stringden cıkarıp sayı yap
+fix(4.6)=4 ====Ondalıktan kurtul
+
+FONKSİYONLARRRRR
+nargin===== fonksiyona gönderilen parametre adeti mesela mesalAl(a,b) dedik ama fonksiyon(a,b,c) burda nargin=2
+error=== if nargin==1
+error('az karakter girdiniz');
+basarılı(varargin)====sonsuz parametre alabilir
+
